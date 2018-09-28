@@ -1,6 +1,6 @@
 # Money Config
-* Version 1.0
-* Function list
+# Version 1.0
+-- Function list
 
 - GivePlayerMoney
 Params:
