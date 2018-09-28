@@ -1,20 +1,21 @@
 # Money Config
 # Version 1.0
--- Function list
 
-- GivePlayerMoney
+# Function list
+
+**GivePlayerMoney**
 Params:
-playerid - The player
-amount - Amount of money
+*playerid - The player*
+*amount - Amount of money*
 
-- ResetPlayerMoney
+**ResetPlayerMoney**
 Params: 
-playerid - The player
+*playerid - The player*
 
 
-- ChangeColorMoneyForPlayer
+**ChangeColorMoneyForPlayer**
 Params:
-playerid - Player
-newcolor - New color to set for player (0xFF000000)
+*playerid - Player
+newcolor - New color to set for player (0xFF000000)*
 
-* The current version is not available support for filterscripts.
+***The current version is not available support for filterscripts.***
