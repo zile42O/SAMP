@@ -8,8 +8,8 @@ Example code:
 Add sanandreasarray.db
 	in scriptfiles
 -	
-```public OnGameModeInit()
+`public OnGameModeInit()
 {
 	SA_MAP_Init()
 	return true;
-}```
+}`
