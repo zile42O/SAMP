@@ -1,13 +1,13 @@
 # SA Objects ArrayData
 # SAMP
 
-**How to use?**
+*How to use?*
 -
-Example code:
+
 
 Add sanandreasarray.db
 	in scriptfiles
--	
+- Example code:	
 `public OnGameModeInit()
 {
 	SA_MAP_Init()
