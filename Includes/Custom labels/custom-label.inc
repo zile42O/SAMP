@@ -16,6 +16,8 @@
 				* Fixed bugs with rotation
 			28.1.2019
 				* Adding types of object effect
+			17.2.2019
+				* Fixed wrong object cylindar
 
 
 	---------------------------------------		
@@ -37,7 +39,7 @@
 #define INVALID_CUSTOM3DLABEL 		0xFFFF
 #define MAX_CUSTOM3DLABEL_NAME		16
 #define OBJECT_CUSTOM3DLABEL_B 		19477 // BILBORD 
-#define OBJECT_CUSTOM3DLABEL_C 		1276  // CYLINDAR
+#define OBJECT_CUSTOM3DLABEL_C 		1317  // CYLINDAR
 #define CUSTOM3DLABEL_STREAM_DIS	5
 
 const TYPE_CUSTOMLABEL_BIL = 0,
