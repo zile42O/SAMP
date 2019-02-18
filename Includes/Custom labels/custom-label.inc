@@ -5,7 +5,7 @@
 		Custom 3D Text label
 
 		@author:  Zile42O
-		@version: 1.0.0
+		@version: 1.0.1
 		@release: 28/01/2019
 
 	---------------------------------------
@@ -18,6 +18,8 @@
 				* Adding types of object effect
 			17.2.2019
 				* Fixed wrong object cylindar
+			18.2.2019
+				* Added color type
 
 
 	---------------------------------------		
@@ -73,7 +75,7 @@ stock cl_FindFreeID()
 stock cl_IsValid(cl_id)
 	return (cl_Data[_:cl_id][cl_exists]);
 
-stock CreateCustom3DLabel(text[], type = TYPE_CUSTOMLABEL_BIL, Float:x, Float:y, Float:z, distance = CUSTOM3DLABEL_STREAM_DIS)
+stock CreateCustom3DLabel(text[], color = 0xFFFFFFFF, type = TYPE_CUSTOMLABEL_BIL, Float:x, Float:y, Float:z, distance = CUSTOM3DLABEL_STREAM_DIS)
 {
 	new cl_id = cl_FindFreeID();
 	if(cl_id == -1)
@@ -88,7 +90,7 @@ stock CreateCustom3DLabel(text[], type = TYPE_CUSTOMLABEL_BIL, Float:x, Float:y,
 		case 0:
 		{
 			cl_Data[cl_id][cl_object_1] = CreateDynamicObject(OBJECT_CUSTOM3DLABEL_B,  0,  0, 0, 0.000, 0.000, 0.000, -1, -1, -1, distance, distance);
-			SetDynamicObjectMaterialText(cl_Data[cl_id][cl_object_1], 0, text, 90, "Segoe Keycaps", 32, 1, -10040320, 0, 1);
+			SetDynamicObjectMaterialText(cl_Data[cl_id][cl_object_1], 0, text, 90, "Segoe Keycaps", 32, 1, color, 0, 1);
 			cl_Data[cl_id][cl_object_2] = CreateDynamicObject(1276,  x,  y,  z - 2.5, 0.000, 0.000, 0.000, -1, -1, -1, distance, distance);
 			AttachDynamicObjectToObject(cl_Data[cl_id][cl_object_1], cl_Data[cl_id][cl_object_2], 0, 0, 2, 0.000, 0.000, 90.000);
 
@@ -96,7 +98,7 @@ stock CreateCustom3DLabel(text[], type = TYPE_CUSTOMLABEL_BIL, Float:x, Float:y,
 		case 1:
 		{
 			cl_Data[cl_id][cl_object_1] = CreateDynamicObject(OBJECT_CUSTOM3DLABEL_C,  0,  0, 0, 0.000, 0.000, 0.000, -1, -1, -1, distance, distance);
-			SetDynamicObjectMaterialText(cl_Data[cl_id][cl_object_1], 0, text, 90, "Segoe Keycaps", 32, 1, -10040320, 0, 1);
+			SetDynamicObjectMaterialText(cl_Data[cl_id][cl_object_1], 0, text, 90, "Segoe Keycaps", 32, 1, color, 0, 1);
 			cl_Data[cl_id][cl_object_2] = CreateDynamicObject(1276,  x,  y,  z - 2.5, 0.000, 0.000, 0.000, -1, -1, -1, distance, distance);
 			AttachDynamicObjectToObject(cl_Data[cl_id][cl_object_1], cl_Data[cl_id][cl_object_2], 0, 0, 2, 0.000, 0.000, 90.000);
 		}
