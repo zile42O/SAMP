@@ -25,9 +25,9 @@ public OnPlayerCommandText(playerid, cmdtext[])
 
 		GetPlayerPos(playerid, x, y, z);
 
-		CreateCustom3DLabel("zile42O", 		TYPE_CUSTOMLABEL_BIL, 	x,    y-    0, 		z, 10);
-		CreateCustom3DLabel("Kanada42O", 	TYPE_CUSTOMLABEL_BIL, 	x,    y+    2, 		z, 10);
-		CreateCustom3DLabel("Ino42O",		TYPE_CUSTOMLABEL_BIL, 	x,    y-    4, 		z, 10);
+		CreateCustom3DLabel("zile42O", 		0xFFFFFFFF, TYPE_CUSTOMLABEL_BIL, 	x,    y-    0, 		z, 10);
+		CreateCustom3DLabel("Kanada42O", 	0xFFFFFFFF, TYPE_CUSTOMLABEL_BIL, 	x,    y+    2, 		z, 10);
+		CreateCustom3DLabel("Ino42O",		0xFFFFFFFF, TYPE_CUSTOMLABEL_BIL, 	x,    y-    4, 		z, 10);
 
 		SendClientMessageToAll(0x00FF00FF, "THE LABELS CREATED!");
 		labelscreated = true;
